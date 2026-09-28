@@ -41,7 +41,7 @@ new Hotel{Id=2,Name="Vinvanta",Address="M G Road Bangalore India", Ratings=4.8}
     {
         if (hotels.Any(h => h.Id == newHotel.Id))
         {
-            return BadRequest("Hotel with the same ID already exists."); 
+            return BadRequest("Hotel with the same ID already exists.");   
         }
         hotels.Add(newHotel);
         return CreatedAtAction(nameof(GetHotels), new { id = newHotel.Id }, newHotel);

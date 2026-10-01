@@ -7,4 +7,7 @@ public class Hotel
     public String Address { get; set; }
     public Double Ratings { get; set; }
 
+    public int CountryId { get; set; }
+    public Country? Country { get; set; }
+
 }
